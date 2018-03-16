@@ -3,6 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Element from 'element-ui'
+import MyHeader from "./components/MyHeader";
+import MyFooter from "./components/MyFooter";
+
+Vue.use(Element);
+Vue.component('my-header',MyHeader)
+Vue.component('my-footer',MyFooter)
 
 Vue.config.productionTip = false
 
